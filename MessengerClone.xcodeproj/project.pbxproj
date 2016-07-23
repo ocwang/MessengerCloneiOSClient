@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84FFD01D4436FE005100DA /* AppDelegate.swift */; };
+		CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84FFD21D4436FE005100DA /* ViewController.swift */; };
+		CA84FFD61D4436FE005100DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD41D4436FE005100DA /* Main.storyboard */; };
+		CA84FFD81D4436FE005100DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD71D4436FE005100DA /* Assets.xcassets */; };
+		CA84FFDB1D4436FE005100DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA84FFCD1D4436FE005100DA /* MessengerClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA84FFD01D4436FE005100DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA84FFD21D4436FE005100DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA84FFD51D4436FE005100DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA84FFD71D4436FE005100DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA84FFDA1D4436FE005100DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA84FFDC1D4436FE005100DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA84FFCA1D4436FE005100DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA84FFC41D4436FE005100DA = {
+			isa = PBXGroup;
+			children = (
+				CA84FFCF1D4436FE005100DA /* MessengerClone */,
+				CA84FFCE1D4436FE005100DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA84FFCE1D4436FE005100DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA84FFCD1D4436FE005100DA /* MessengerClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA84FFCF1D4436FE005100DA /* MessengerClone */ = {
+			isa = PBXGroup;
+			children = (
+				CA84FFD01D4436FE005100DA /* AppDelegate.swift */,
+				CA84FFD21D4436FE005100DA /* ViewController.swift */,
+				CA84FFD41D4436FE005100DA /* Main.storyboard */,
+				CA84FFD71D4436FE005100DA /* Assets.xcassets */,
+				CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */,
+				CA84FFDC1D4436FE005100DA /* Info.plist */,
+			);
+			path = MessengerClone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA84FFCC1D4436FE005100DA /* MessengerClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA84FFDF1D4436FE005100DA /* Build configuration list for PBXNativeTarget "MessengerClone" */;
+			buildPhases = (
+				CA84FFC91D4436FE005100DA /* Sources */,
+				CA84FFCA1D4436FE005100DA /* Frameworks */,
+				CA84FFCB1D4436FE005100DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessengerClone;
+			productName = MessengerClone;
+			productReference = CA84FFCD1D4436FE005100DA /* MessengerClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA84FFC51D4436FE005100DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ocwang;
+				TargetAttributes = {
+					CA84FFCC1D4436FE005100DA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CA84FFC81D4436FE005100DA /* Build configuration list for PBXProject "MessengerClone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA84FFC41D4436FE005100DA;
+			productRefGroup = CA84FFCE1D4436FE005100DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA84FFCC1D4436FE005100DA /* MessengerClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA84FFCB1D4436FE005100DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA84FFDB1D4436FE005100DA /* LaunchScreen.storyboard in Resources */,
+				CA84FFD81D4436FE005100DA /* Assets.xcassets in Resources */,
+				CA84FFD61D4436FE005100DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA84FFC91D4436FE005100DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */,
+				CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA84FFD41D4436FE005100DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA84FFD51D4436FE005100DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA84FFDA1D4436FE005100DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA84FFDD1D4436FE005100DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA84FFDE1D4436FE005100DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA84FFE01D4436FE005100DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MessengerClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocwang.MessengerClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA84FFE11D4436FE005100DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MessengerClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocwang.MessengerClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA84FFC81D4436FE005100DA /* Build configuration list for PBXProject "MessengerClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA84FFDD1D4436FE005100DA /* Debug */,
+				CA84FFDE1D4436FE005100DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA84FFDF1D4436FE005100DA /* Build configuration list for PBXNativeTarget "MessengerClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA84FFE01D4436FE005100DA /* Debug */,
+				CA84FFE11D4436FE005100DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA84FFC51D4436FE005100DA /* Project object */;
+}
