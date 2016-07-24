@@ -7,19 +7,109 @@
 //
 
 import UIKit
+import SwiftPhoenixClient
 
 class ViewController: UIViewController {
 
+    typealias Message = Phoenix.Message
+    
+    // MARK: - Instance Vars
+    
+    let topic = "rooms:lobby"
+    
+    let socket = Phoenix.Socket(domainAndPort: Constant.herokuDomain,
+                                path: "socket",
+                                transport: "websocket",
+                                prot: "https")
+    
+    var messages: [Message] = []
+    
+    // MARK: - Subviews
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - View Controller Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.dataSource = self
+        
+        let message = Message(subject: "status", body: "joining")
+        socket.join(topic: topic, message: message) {
+            guard let channel = $0 as? Phoenix.Channel else {
+                return
+            }
+            
+            self.setupChannel(channel)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func setupChannel(channel: Phoenix.Channel) {
+        channel.on("join", callback: { (message) in
+            print("You joined the room")
+        })
+        
+        channel.on("new:msg") { message in
+            guard let
+                message = message as? Message,
+                _       = message.message?["user"],
+                _       = message.message?["body"]
+                else { return }
+            
+            self.messages.append(message)
+            let newIndexPath = NSIndexPath(forRow: self.messages.count - 1, inSection: 0)
+
+            dispatch_async(dispatch_get_main_queue(), {
+                self.tableView.beginUpdates()
+                self.tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Automatic)
+                self.tableView.endUpdates()
+            })
+        }
     }
+    
+    @IBAction func sendHelloWorld(sender: UIButton) {
+        sendMessage("ocwang", body: "hello world")
+    }
+    
+    func sendMessage(username: String, body: String) {
+        let dict = ["user": username, "body": body]
+        let message = Message(message: dict)
 
+        let payload = Phoenix.Payload(topic: topic,
+                                      event: "new:msg",
+                                      message: message)
+        socket.send(payload)
+    }
+}
 
+extension ViewController: UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
+        configureCell(cell, atIndexPath: indexPath)
+        
+        return cell
+    }
+    
+    func configureCell(cell: MessageCell, atIndexPath indexPath: NSIndexPath) {
+        let message = messages[indexPath.row]
+        
+        // data is a dictionary with keys that indicate the name of the field
+        // and a value of type AnyObject
+        let data = message.message as! Dictionary<String, SwiftPhoenixClient.JSON>
+        
+        guard let
+            username = data["user"],
+            body = data["body"]
+            else { return }
+        
+        cell.contentLabel.text = "[\(username)] \(body)"
+        cell.containerView.backgroundColor =
+            String(username).containsString("ocwang") ? .greenColor() : .redColor()
+    }
 }
 

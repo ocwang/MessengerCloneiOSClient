@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E35244D0B201D7A9C87ADD6A170837 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A515B3FA6F1D73AB32CCFF5556F14D /* Json.swift */; };
+		195EA2E3C795EA2798F5BE7784B913BE /* SwiftPhoenixClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1415D0CC8E931EDC182CAE1221EE7E84 /* SwiftPhoenixClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25864B6ECA075A7554C27E565C1A41EA /* Phoenix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E11531836AE635DCDBCAD8A89976A /* Phoenix.swift */; };
+		261D0FB06C48128F62B8799FFDA5AABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5ED35AC067115E8561F19DB916241CB /* Foundation.framework */; };
+		2DAA450556AA2A785D727C1AFEA3D095 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC42A740BBF7A544A0925AFBF601ACB6 /* Serializable.swift */; };
+		3B2FC84A35CF7B80B68684A0555943CB /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCADD238913719955393449BAD8079F7 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AB628C9BCADA4D03C12799C9FBB37AA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */; };
+		896D3C5524F2931A7D9D9A079AA74894 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5ED35AC067115E8561F19DB916241CB /* Foundation.framework */; };
+		9D6A670E75798BD28979FAF41DBAC0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5ED35AC067115E8561F19DB916241CB /* Foundation.framework */; };
+		C1031FF12E2D592730931325BAC1FFC6 /* Pods-MessengerClone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 924AFE6EBE095AFAAB34D4210D591683 /* Pods-MessengerClone-dummy.m */; };
+		CC57C94B629CBC22487087D3D55BC08D /* SwiftPhoenixClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30663D0783B5DF3071B2581D779B33BC /* SwiftPhoenixClient-dummy.m */; };
+		D3ABF442CFBC2CCF9941DB5E339C32E0 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74AC3D308AB37CE87E13BAFEAA4120 /* SSLSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA9D16F22FDED429773D8BAC371B480B /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A445858CBBFBD35214FE9B8A1208499E /* Path.swift */; };
+		ED533454E293C8CA87B422BA493A0891 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217824BFBDCF563F3DE53A9E26635E3 /* WebSocket.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3ED5A0856DE536294FA2BF1E95E41C6 /* Pods-MessengerClone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4845293094E814B21CB1B65E9B6F7D74 /* Pods-MessengerClone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9C5A427DD6B07B8E316ED56C996CD33 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E20EB49EC8D35571894715CCAD0BA9 /* Starscream-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C4BFEA99A95FF38751617CD586F424D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AFEB0C7FDAA2BE2C74DC297EA798112;
+			remoteInfo = SwiftPhoenixClient;
+		};
+		0D662776C6E9F25B8666CBFD7195DF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C3EA47C05BA5A0846DBB8353C46E79;
+			remoteInfo = Starscream;
+		};
+		33ADC0648108444C67108C43BB5071FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C3EA47C05BA5A0846DBB8353C46E79;
+			remoteInfo = Starscream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0217824BFBDCF563F3DE53A9E26635E3 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		04477F827740468144B1C4C19EC31F36 /* Pods-MessengerClone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MessengerClone.modulemap"; sourceTree = "<group>"; };
+		0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1415D0CC8E931EDC182CAE1221EE7E84 /* SwiftPhoenixClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPhoenixClient-umbrella.h"; sourceTree = "<group>"; };
+		2055533D81994CCD8417253362A11CBE /* SwiftPhoenixClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPhoenixClient.xcconfig; sourceTree = "<group>"; };
+		27A14905982019EB7CD7C7C24EE71715 /* Pods-MessengerClone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MessengerClone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		30663D0783B5DF3071B2581D779B33BC /* SwiftPhoenixClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPhoenixClient-dummy.m"; sourceTree = "<group>"; };
+		31403D4D075BD5EEDD77C8719733E366 /* Pods-MessengerClone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MessengerClone-resources.sh"; sourceTree = "<group>"; };
+		4845293094E814B21CB1B65E9B6F7D74 /* Pods-MessengerClone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MessengerClone-umbrella.h"; sourceTree = "<group>"; };
+		48E20EB49EC8D35571894715CCAD0BA9 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		52BC8C72A9989E7545127F2B89E8F938 /* Pods-MessengerClone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MessengerClone-acknowledgements.plist"; sourceTree = "<group>"; };
+		5366E4E8E3F327572D3188B170A418FC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFCDA189843D30326F0BEAF8C6D24AE /* SwiftPhoenixClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftPhoenixClient.modulemap; sourceTree = "<group>"; };
+		6BEB0DB812F6155512A0E2667CC49744 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Starscream.modulemap; sourceTree = "<group>"; };
+		7198522E5ED0F7D0262B898FA969196C /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		782E11531836AE635DCDBCAD8A89976A /* Phoenix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Phoenix.swift; path = Pod/Classes/Phoenix.swift; sourceTree = "<group>"; };
+		7FAA8DDAC4C9EB3309A1857313C37BB4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		804757A4BD01B3850B6FCEA0267B9B95 /* SwiftPhoenixClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPhoenixClient-prefix.pch"; sourceTree = "<group>"; };
+		86A515B3FA6F1D73AB32CCFF5556F14D /* Json.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Json.swift; path = Pod/Classes/Json.swift; sourceTree = "<group>"; };
+		8A44328C223FF77FA4BD10BD639F506B /* Pods-MessengerClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MessengerClone.debug.xcconfig"; sourceTree = "<group>"; };
+		8FD7155F7E81F180DF88811A87D9166A /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		924AFE6EBE095AFAAB34D4210D591683 /* Pods-MessengerClone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MessengerClone-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FC975897DE87F88D6DB8E7840D5C460 /* Pods-MessengerClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MessengerClone.release.xcconfig"; sourceTree = "<group>"; };
+		A445858CBBFBD35214FE9B8A1208499E /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Pod/Classes/Path.swift; sourceTree = "<group>"; };
+		A4F6D93653DB78934BF28FF3C6D7F631 /* Pods_MessengerClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ED35AC067115E8561F19DB916241CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC42A740BBF7A544A0925AFBF601ACB6 /* Serializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Serializable.swift; path = Pod/Classes/Serializable.swift; sourceTree = "<group>"; };
+		CC74AC3D308AB37CE87E13BAFEAA4120 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		D92CEEEC05F411D3002F8D5E6EE113D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77AF9C8CDF9C2CCB2CF6F62D35E9D44 /* Pods-MessengerClone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MessengerClone-frameworks.sh"; sourceTree = "<group>"; };
+		F50391EC5F364318424D3AD99EDA5600 /* SwiftPhoenixClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPhoenixClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCADD238913719955393449BAD8079F7 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		FE4424CF3DA231FDB6C51EA1A20AA663 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FEA9BBAE9F88EA4AEA8794D5F977586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6A670E75798BD28979FAF41DBAC0FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65BF3F5675513C61938909DAD6C35CE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261D0FB06C48128F62B8799FFDA5AABF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D96778203C99863A55F9B31C0EDC1810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896D3C5524F2931A7D9D9A079AA74894 /* Foundation.framework in Frameworks */,
+				7AB628C9BCADA4D03C12799C9FBB37AA /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15A34E2821801EAFD1E4DE033B026BAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B45D3FF890BA3B7189D8AE08ECB2546D /* Starscream */,
+				25753ED70783853BBC88E684CDC7B10B /* SwiftPhoenixClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		22B2BEB86D4C9EA63B2CB59369C5C929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4F6D93653DB78934BF28FF3C6D7F631 /* Pods_MessengerClone.framework */,
+				5366E4E8E3F327572D3188B170A418FC /* Starscream.framework */,
+				F50391EC5F364318424D3AD99EDA5600 /* SwiftPhoenixClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25753ED70783853BBC88E684CDC7B10B /* SwiftPhoenixClient */ = {
+			isa = PBXGroup;
+			children = (
+				86A515B3FA6F1D73AB32CCFF5556F14D /* Json.swift */,
+				A445858CBBFBD35214FE9B8A1208499E /* Path.swift */,
+				782E11531836AE635DCDBCAD8A89976A /* Phoenix.swift */,
+				CC42A740BBF7A544A0925AFBF601ACB6 /* Serializable.swift */,
+				B41B261353C66761AB5286569D8A570C /* Support Files */,
+			);
+			path = SwiftPhoenixClient;
+			sourceTree = "<group>";
+		};
+		67A4415E523A730670C752C2541F61CA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C5ED35AC067115E8561F19DB916241CB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		779355DDC4C938EB7830505A6080A7B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D92CEEEC05F411D3002F8D5E6EE113D1 /* Info.plist */,
+				6BEB0DB812F6155512A0E2667CC49744 /* Starscream.modulemap */,
+				7198522E5ED0F7D0262B898FA969196C /* Starscream.xcconfig */,
+				48E20EB49EC8D35571894715CCAD0BA9 /* Starscream-dummy.m */,
+				8FD7155F7E81F180DF88811A87D9166A /* Starscream-prefix.pch */,
+				FCADD238913719955393449BAD8079F7 /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		7AE8569FFF6827A5DCE75EC743CE5381 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7756E5653BE20015BBA03B15774B7DB /* Pods-MessengerClone */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */,
+				15A34E2821801EAFD1E4DE033B026BAC /* Pods */,
+				22B2BEB86D4C9EA63B2CB59369C5C929 /* Products */,
+				7AE8569FFF6827A5DCE75EC743CE5381 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B41B261353C66761AB5286569D8A570C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FAA8DDAC4C9EB3309A1857313C37BB4 /* Info.plist */,
+				5BFCDA189843D30326F0BEAF8C6D24AE /* SwiftPhoenixClient.modulemap */,
+				2055533D81994CCD8417253362A11CBE /* SwiftPhoenixClient.xcconfig */,
+				30663D0783B5DF3071B2581D779B33BC /* SwiftPhoenixClient-dummy.m */,
+				804757A4BD01B3850B6FCEA0267B9B95 /* SwiftPhoenixClient-prefix.pch */,
+				1415D0CC8E931EDC182CAE1221EE7E84 /* SwiftPhoenixClient-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftPhoenixClient";
+			sourceTree = "<group>";
+		};
+		B45D3FF890BA3B7189D8AE08ECB2546D /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				CC74AC3D308AB37CE87E13BAFEAA4120 /* SSLSecurity.swift */,
+				0217824BFBDCF563F3DE53A9E26635E3 /* WebSocket.swift */,
+				779355DDC4C938EB7830505A6080A7B2 /* Support Files */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		B7756E5653BE20015BBA03B15774B7DB /* Pods-MessengerClone */ = {
+			isa = PBXGroup;
+			children = (
+				FE4424CF3DA231FDB6C51EA1A20AA663 /* Info.plist */,
+				04477F827740468144B1C4C19EC31F36 /* Pods-MessengerClone.modulemap */,
+				27A14905982019EB7CD7C7C24EE71715 /* Pods-MessengerClone-acknowledgements.markdown */,
+				52BC8C72A9989E7545127F2B89E8F938 /* Pods-MessengerClone-acknowledgements.plist */,
+				924AFE6EBE095AFAAB34D4210D591683 /* Pods-MessengerClone-dummy.m */,
+				E77AF9C8CDF9C2CCB2CF6F62D35E9D44 /* Pods-MessengerClone-frameworks.sh */,
+				31403D4D075BD5EEDD77C8719733E366 /* Pods-MessengerClone-resources.sh */,
+				4845293094E814B21CB1B65E9B6F7D74 /* Pods-MessengerClone-umbrella.h */,
+				8A44328C223FF77FA4BD10BD639F506B /* Pods-MessengerClone.debug.xcconfig */,
+				9FC975897DE87F88D6DB8E7840D5C460 /* Pods-MessengerClone.release.xcconfig */,
+			);
+			name = "Pods-MessengerClone";
+			path = "Target Support Files/Pods-MessengerClone";
+			sourceTree = "<group>";
+		};
+		C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */,
+				67A4415E523A730670C752C2541F61CA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		363F00E40DF9E36768C84B6BF6FB79B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2FC84A35CF7B80B68684A0555943CB /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E350F5E36A540E031AB98BD3C2FD15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				195EA2E3C795EA2798F5BE7784B913BE /* SwiftPhoenixClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCBED5E6785CF087CD308239F33BF8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3ED5A0856DE536294FA2BF1E95E41C6 /* Pods-MessengerClone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AFEB0C7FDAA2BE2C74DC297EA798112 /* SwiftPhoenixClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 871F5516810E7C3A99AB45882D4283AE /* Build configuration list for PBXNativeTarget "SwiftPhoenixClient" */;
+			buildPhases = (
+				1533B01F885D8D2FAA5148A2777CB1CF /* Sources */,
+				D96778203C99863A55F9B31C0EDC1810 /* Frameworks */,
+				79E350F5E36A540E031AB98BD3C2FD15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30DC8717DCE56172E411691D752B55EA /* PBXTargetDependency */,
+			);
+			name = SwiftPhoenixClient;
+			productName = SwiftPhoenixClient;
+			productReference = F50391EC5F364318424D3AD99EDA5600 /* SwiftPhoenixClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61C3EA47C05BA5A0846DBB8353C46E79 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3642017345424E191C2F54F605F86C2 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				FAFCDB9A5AB9D5489C9B8E778994C37A /* Sources */,
+				5FEA9BBAE9F88EA4AEA8794D5F977586 /* Frameworks */,
+				363F00E40DF9E36768C84B6BF6FB79B9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 5366E4E8E3F327572D3188B170A418FC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96A88D01869E6FC3E93608F966EBB79C /* Pods-MessengerClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F097B014F28A945867623F4ED717B3BA /* Build configuration list for PBXNativeTarget "Pods-MessengerClone" */;
+			buildPhases = (
+				B76F653DD39277A30891FE747056F8B3 /* Sources */,
+				65BF3F5675513C61938909DAD6C35CE9 /* Frameworks */,
+				7BCBED5E6785CF087CD308239F33BF8C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF800FDBA84BC8F9FC779066AEE55E5D /* PBXTargetDependency */,
+				969DEAA474BFA48ADE0C64B9E55FAB7F /* PBXTargetDependency */,
+			);
+			name = "Pods-MessengerClone";
+			productName = "Pods-MessengerClone";
+			productReference = A4F6D93653DB78934BF28FF3C6D7F631 /* Pods_MessengerClone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 22B2BEB86D4C9EA63B2CB59369C5C929 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A88D01869E6FC3E93608F966EBB79C /* Pods-MessengerClone */,
+				61C3EA47C05BA5A0846DBB8353C46E79 /* Starscream */,
+				0AFEB0C7FDAA2BE2C74DC297EA798112 /* SwiftPhoenixClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1533B01F885D8D2FAA5148A2777CB1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E35244D0B201D7A9C87ADD6A170837 /* Json.swift in Sources */,
+				DA9D16F22FDED429773D8BAC371B480B /* Path.swift in Sources */,
+				25864B6ECA075A7554C27E565C1A41EA /* Phoenix.swift in Sources */,
+				2DAA450556AA2A785D727C1AFEA3D095 /* Serializable.swift in Sources */,
+				CC57C94B629CBC22487087D3D55BC08D /* SwiftPhoenixClient-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76F653DD39277A30891FE747056F8B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1031FF12E2D592730931325BAC1FFC6 /* Pods-MessengerClone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFCDB9A5AB9D5489C9B8E778994C37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ABF442CFBC2CCF9941DB5E339C32E0 /* SSLSecurity.swift in Sources */,
+				F9C5A427DD6B07B8E316ED56C996CD33 /* Starscream-dummy.m in Sources */,
+				ED533454E293C8CA87B422BA493A0891 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30DC8717DCE56172E411691D752B55EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 61C3EA47C05BA5A0846DBB8353C46E79 /* Starscream */;
+			targetProxy = 33ADC0648108444C67108C43BB5071FF /* PBXContainerItemProxy */;
+		};
+		969DEAA474BFA48ADE0C64B9E55FAB7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftPhoenixClient;
+			target = 0AFEB0C7FDAA2BE2C74DC297EA798112 /* SwiftPhoenixClient */;
+			targetProxy = 0C4BFEA99A95FF38751617CD586F424D /* PBXContainerItemProxy */;
+		};
+		BF800FDBA84BC8F9FC779066AEE55E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 61C3EA47C05BA5A0846DBB8353C46E79 /* Starscream */;
+			targetProxy = 0D662776C6E9F25B8666CBFD7195DF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2365B68D9D786E30F67F380A559E7B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC975897DE87F88D6DB8E7840D5C460 /* Pods-MessengerClone.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MessengerClone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MessengerClone/Pods-MessengerClone.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MessengerClone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CB0185C88C3CBDE837DAE3B0DBD691C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7198522E5ED0F7D0262B898FA969196C /* Starscream.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		869F822AB211D3CFB44E058BFEED665F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A44328C223FF77FA4BD10BD639F506B /* Pods-MessengerClone.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MessengerClone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MessengerClone/Pods-MessengerClone.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MessengerClone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88FA164A7C37CDBF8067640E24147461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2055533D81994CCD8417253362A11CBE /* SwiftPhoenixClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPhoenixClient/SwiftPhoenixClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPhoenixClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftPhoenixClient/SwiftPhoenixClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftPhoenixClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6B398FACE553E1E9896329989BF034C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2055533D81994CCD8417253362A11CBE /* SwiftPhoenixClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPhoenixClient/SwiftPhoenixClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPhoenixClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftPhoenixClient/SwiftPhoenixClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftPhoenixClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA1FE6C37F9B667E8D390C90F6CCB31A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7198522E5ED0F7D0262B898FA969196C /* Starscream.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		871F5516810E7C3A99AB45882D4283AE /* Build configuration list for PBXNativeTarget "SwiftPhoenixClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B398FACE553E1E9896329989BF034C /* Debug */,
+				88FA164A7C37CDBF8067640E24147461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3642017345424E191C2F54F605F86C2 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB0185C88C3CBDE837DAE3B0DBD691C /* Debug */,
+				BA1FE6C37F9B667E8D390C90F6CCB31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F097B014F28A945867623F4ED717B3BA /* Build configuration list for PBXNativeTarget "Pods-MessengerClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				869F822AB211D3CFB44E058BFEED665F /* Debug */,
+				2365B68D9D786E30F67F380A559E7B48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
