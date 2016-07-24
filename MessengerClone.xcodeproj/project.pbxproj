@@ -15,6 +15,8 @@
 		CA84FFDB1D4436FE005100DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */; };
 		CABD25881D444EB8002B6385 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD25871D444EB8002B6385 /* MessageCell.swift */; };
 		CAEA2B211D448F9700751298 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2B201D448F9700751298 /* Constant.swift */; };
+		CAEA2B231D44942700751298 /* MCTextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAEA2B221D44942700751298 /* MCTextInputView.xib */; };
+		CAEA2B251D44949C00751298 /* MCTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2B241D44949C00751298 /* MCTextInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		CA84FFDC1D4436FE005100DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CABD25871D444EB8002B6385 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		CAEA2B201D448F9700751298 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CAEA2B221D44942700751298 /* MCTextInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCTextInputView.xib; sourceTree = "<group>"; };
+		CAEA2B241D44949C00751298 /* MCTextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTextInputView.swift; sourceTree = "<group>"; };
 		E9F7F46E93FE39ABF9B415B2 /* Pods_MessengerClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,8 @@
 			children = (
 				CA84FFD01D4436FE005100DA /* AppDelegate.swift */,
 				CA84FFD21D4436FE005100DA /* ViewController.swift */,
+				CAEA2B221D44942700751298 /* MCTextInputView.xib */,
+				CAEA2B241D44949C00751298 /* MCTextInputView.swift */,
 				CAEA2B201D448F9700751298 /* Constant.swift */,
 				CABD25871D444EB8002B6385 /* MessageCell.swift */,
 				CA84FFD41D4436FE005100DA /* Main.storyboard */,
@@ -155,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEA2B231D44942700751298 /* MCTextInputView.xib in Resources */,
 				CA84FFDB1D4436FE005100DA /* LaunchScreen.storyboard in Resources */,
 				CA84FFD81D4436FE005100DA /* Assets.xcassets in Resources */,
 				CA84FFD61D4436FE005100DA /* Main.storyboard in Resources */,
@@ -220,6 +227,7 @@
 				CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */,
 				CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */,
 				CAEA2B211D448F9700751298 /* Constant.swift in Sources */,
+				CAEA2B251D44949C00751298 /* MCTextInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
