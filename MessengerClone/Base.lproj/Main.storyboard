@@ -61,27 +61,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-Dd-QpT">
-                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
-                                <color key="backgroundColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="acK-A9-ckY"/>
-                                </constraints>
-                                <state key="normal" title="Send Hello World"/>
-                                <connections>
-                                    <action selector="sendHelloWorld:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Me-cj-Dyt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9bc-Dd-QpT" secondAttribute="bottom" id="7md-EY-hlc"/>
-                            <constraint firstAttribute="trailing" secondItem="9bc-Dd-QpT" secondAttribute="trailing" id="FDN-zA-o00"/>
                             <constraint firstItem="vVM-qh-yaa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="P04-Qo-5Vd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vVM-qh-yaa" secondAttribute="bottom" id="SRm-Ln-M0N"/>
                             <constraint firstAttribute="trailing" secondItem="vVM-qh-yaa" secondAttribute="trailing" id="bsq-x4-Tjm"/>
                             <constraint firstItem="vVM-qh-yaa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fMx-Cq-dVN"/>
-                            <constraint firstItem="9bc-Dd-QpT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wMX-3t-pQn"/>
                         </constraints>
                     </view>
                     <connections>

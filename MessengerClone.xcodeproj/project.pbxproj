@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B27A76441F41657AC1916D4E /* Pods_MessengerClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F7F46E93FE39ABF9B415B2 /* Pods_MessengerClone.framework */; };
+		CA2358021D4495FA00B9C539 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2358011D4495FA00B9C539 /* UIViewExtensions.swift */; };
+		CA2358081D449B2100B9C539 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2358071D449B2100B9C539 /* StringExtensions.swift */; };
 		CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84FFD01D4436FE005100DA /* AppDelegate.swift */; };
 		CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84FFD21D4436FE005100DA /* ViewController.swift */; };
 		CA84FFD61D4436FE005100DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD41D4436FE005100DA /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		5009A3319640A687BD632AC5 /* Pods-MessengerClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerClone/Pods-MessengerClone.release.xcconfig"; sourceTree = "<group>"; };
 		BA7DB362BD95F5260E9DD601 /* Pods-MessengerClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerClone/Pods-MessengerClone.debug.xcconfig"; sourceTree = "<group>"; };
+		CA2358011D4495FA00B9C539 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		CA2358071D449B2100B9C539 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		CA84FFCD1D4436FE005100DA /* MessengerClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA84FFD01D4436FE005100DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA84FFD21D4436FE005100DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CA2358031D4497A600B9C539 /* MCTextInputView */ = {
+			isa = PBXGroup;
+			children = (
+				CAEA2B221D44942700751298 /* MCTextInputView.xib */,
+				CAEA2B241D44949C00751298 /* MCTextInputView.swift */,
+			);
+			name = MCTextInputView;
+			sourceTree = "<group>";
+		};
+		CA2358041D4497AE00B9C539 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA2358011D4495FA00B9C539 /* UIViewExtensions.swift */,
+				CA2358071D449B2100B9C539 /* StringExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CA2358051D4497BA00B9C539 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */,
+				CA84FFDC1D4436FE005100DA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CA2358061D4497E400B9C539 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CA2358041D4497AE00B9C539 /* Extensions */,
+				CAEA2B201D448F9700751298 /* Constant.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		CA84FFC41D4436FE005100DA = {
 			isa = PBXGroup;
 			children = (
@@ -88,14 +128,12 @@
 			children = (
 				CA84FFD01D4436FE005100DA /* AppDelegate.swift */,
 				CA84FFD21D4436FE005100DA /* ViewController.swift */,
-				CAEA2B221D44942700751298 /* MCTextInputView.xib */,
-				CAEA2B241D44949C00751298 /* MCTextInputView.swift */,
-				CAEA2B201D448F9700751298 /* Constant.swift */,
 				CABD25871D444EB8002B6385 /* MessageCell.swift */,
+				CA2358031D4497A600B9C539 /* MCTextInputView */,
 				CA84FFD41D4436FE005100DA /* Main.storyboard */,
 				CA84FFD71D4436FE005100DA /* Assets.xcassets */,
-				CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */,
-				CA84FFDC1D4436FE005100DA /* Info.plist */,
+				CA2358061D4497E400B9C539 /* Utilities */,
+				CA2358051D4497BA00B9C539 /* Resources */,
 			);
 			path = MessengerClone;
 			sourceTree = "<group>";
@@ -226,7 +264,9 @@
 				CABD25881D444EB8002B6385 /* MessageCell.swift in Sources */,
 				CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */,
 				CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */,
+				CA2358081D449B2100B9C539 /* StringExtensions.swift in Sources */,
 				CAEA2B211D448F9700751298 /* Constant.swift in Sources */,
+				CA2358021D4495FA00B9C539 /* UIViewExtensions.swift in Sources */,
 				CAEA2B251D44949C00751298 /* MCTextInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

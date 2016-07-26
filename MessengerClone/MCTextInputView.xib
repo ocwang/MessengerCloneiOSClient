@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,19 +13,37 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1B-j4-n8u">
-                    <rect key="frame" x="10" y="10" width="580" height="80"/>
+                    <rect key="frame" x="10" y="10" width="490" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPd-8X-aut">
+                    <rect key="frame" x="510" y="10" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.38973922102422787" green="0.81461658354991329" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TPd-8X-aut" secondAttribute="height" multiplier="1:1" id="wih-cF-wx9"/>
+                    </constraints>
+                    <state key="normal" title="Send">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="TPd-8X-aut" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="9zO-lt-Nk6"/>
                 <constraint firstItem="x1B-j4-n8u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="R5l-Gs-cBM"/>
+                <constraint firstAttribute="trailing" secondItem="TPd-8X-aut" secondAttribute="trailing" constant="10" id="S1d-Aa-3rH"/>
                 <constraint firstAttribute="bottom" secondItem="x1B-j4-n8u" secondAttribute="bottom" constant="10" id="bE7-sb-dmZ"/>
-                <constraint firstAttribute="trailing" secondItem="x1B-j4-n8u" secondAttribute="trailing" constant="10" id="eR2-Pw-nz3"/>
+                <constraint firstItem="TPd-8X-aut" firstAttribute="leading" secondItem="x1B-j4-n8u" secondAttribute="trailing" constant="10" id="bfx-hI-7Oz"/>
+                <constraint firstAttribute="bottom" secondItem="TPd-8X-aut" secondAttribute="bottom" constant="10" id="mKZ-g7-aUn"/>
                 <constraint firstItem="x1B-j4-n8u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ofA-Nq-iGf"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sendButton" destination="TPd-8X-aut" id="NvB-6k-N3K"/>
+                <outlet property="textField" destination="x1B-j4-n8u" id="UGW-8N-ChC"/>
+            </connections>
             <point key="canvasLocation" x="365" y="143"/>
         </view>
     </objects>

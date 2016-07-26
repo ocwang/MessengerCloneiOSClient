@@ -10,4 +10,8 @@ import UIKit
 
 class MCTextInputView: UIView {
     
+    // MARK: - Subviews
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
 }

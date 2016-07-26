@@ -24,9 +24,25 @@ class ViewController: UIViewController {
     
     var messages: [Message] = []
     
+    var didSetupConstraints = false
+    
+    var textInputViewBottomConstraint: NSLayoutConstraint?
+    
     // MARK: - Subviews
     
     @IBOutlet weak var tableView: UITableView!
+    
+    private lazy var textInputView: MCTextInputView = {
+        let textInputView = MCTextInputView.fromNib()
+        textInputView.translatesAutoresizingMaskIntoConstraints = false
+        textInputView.backgroundColor = UIColor.brownColor()
+        textInputView.textField.delegate = self
+        textInputView.sendButton.addTarget(self,
+                                           action: #selector(self.sendButtonTapped(_:)),
+                                           forControlEvents: .TouchUpInside)
+        
+        return textInputView
+    }()
     
     // MARK: - View Controller Life Cycle
     
@@ -43,8 +59,11 @@ class ViewController: UIViewController {
             
             self.setupChannel(channel)
         }
+        
+        view.addSubview(textInputView)
+        view.setNeedsUpdateConstraints()
     }
-
+    
     func setupChannel(channel: Phoenix.Channel) {
         channel.on("join", callback: { (message) in
             print("You joined the room")
@@ -59,7 +78,7 @@ class ViewController: UIViewController {
             
             self.messages.append(message)
             let newIndexPath = NSIndexPath(forRow: self.messages.count - 1, inSection: 0)
-
+            
             dispatch_async(dispatch_get_main_queue(), {
                 self.tableView.beginUpdates()
                 self.tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Automatic)
@@ -68,8 +87,36 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func sendHelloWorld(sender: UIButton) {
-        sendMessage("ocwang", body: "hello world")
+    // MARK: - Auto Layout
+    
+    func setupConstraints() {
+        textInputView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor).active = true
+        textInputView.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
+        textInputViewBottomConstraint =
+            textInputView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor)
+        textInputViewBottomConstraint!.active = true
+        textInputView.heightAnchor.constraintEqualToConstant(100).active = true
+    }
+    
+    override func updateViewConstraints() {
+        if !didSetupConstraints {
+            setupConstraints()
+            didSetupConstraints = true
+        }
+        
+        super.updateViewConstraints()
+    }
+    
+    // MARK: - Channel Helpers
+    
+    func sendButtonTapped(sender: UIButton) {
+        guard let body = textInputView.textField.text else {
+            return
+        }
+
+        sendMessage("ocwang", body: body)
+        textInputView.textField.text = ""
+        textInputView.textField.resignFirstResponder()
     }
     
     func sendMessage(username: String, body: String) {
@@ -113,3 +160,8 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    // TODO: Implement Later
+    
+}
