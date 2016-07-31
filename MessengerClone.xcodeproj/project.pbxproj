@@ -10,12 +10,16 @@
 		B27A76441F41657AC1916D4E /* Pods_MessengerClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F7F46E93FE39ABF9B415B2 /* Pods_MessengerClone.framework */; };
 		CA2358021D4495FA00B9C539 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2358011D4495FA00B9C539 /* UIViewExtensions.swift */; };
 		CA2358081D449B2100B9C539 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2358071D449B2100B9C539 /* StringExtensions.swift */; };
+		CA3D99591D4DBE8F002A8F60 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D99581D4DBE8F002A8F60 /* User.swift */; };
 		CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84FFD01D4436FE005100DA /* AppDelegate.swift */; };
 		CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84FFD21D4436FE005100DA /* ViewController.swift */; };
 		CA84FFD61D4436FE005100DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD41D4436FE005100DA /* Main.storyboard */; };
 		CA84FFD81D4436FE005100DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD71D4436FE005100DA /* Assets.xcassets */; };
 		CA84FFDB1D4436FE005100DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA84FFD91D4436FE005100DA /* LaunchScreen.storyboard */; };
 		CABD25881D444EB8002B6385 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABD25871D444EB8002B6385 /* MessageCell.swift */; };
+		CAE8FCBF1D4C832900DA62D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE8FCBE1D4C832900DA62D3 /* LoginViewController.swift */; };
+		CAE8FCC11D4C84F700DA62D3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE8FCC01D4C84F700DA62D3 /* SignUpViewController.swift */; };
+		CAE8FCC31D4DAECA00DA62D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE8FCC21D4DAECA00DA62D3 /* HomeViewController.swift */; };
 		CAEA2B211D448F9700751298 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2B201D448F9700751298 /* Constant.swift */; };
 		CAEA2B231D44942700751298 /* MCTextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAEA2B221D44942700751298 /* MCTextInputView.xib */; };
 		CAEA2B251D44949C00751298 /* MCTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEA2B241D44949C00751298 /* MCTextInputView.swift */; };
@@ -26,6 +30,7 @@
 		BA7DB362BD95F5260E9DD601 /* Pods-MessengerClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessengerClone/Pods-MessengerClone.debug.xcconfig"; sourceTree = "<group>"; };
 		CA2358011D4495FA00B9C539 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		CA2358071D449B2100B9C539 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		CA3D99581D4DBE8F002A8F60 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CA84FFCD1D4436FE005100DA /* MessengerClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA84FFD01D4436FE005100DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA84FFD21D4436FE005100DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		CA84FFDA1D4436FE005100DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA84FFDC1D4436FE005100DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CABD25871D444EB8002B6385 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		CAE8FCBE1D4C832900DA62D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CAE8FCC01D4C84F700DA62D3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CAE8FCC21D4DAECA00DA62D3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CAEA2B201D448F9700751298 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		CAEA2B221D44942700751298 /* MCTextInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCTextInputView.xib; sourceTree = "<group>"; };
 		CAEA2B241D44949C00751298 /* MCTextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCTextInputView.swift; sourceTree = "<group>"; };
@@ -128,7 +136,11 @@
 			children = (
 				CA84FFD01D4436FE005100DA /* AppDelegate.swift */,
 				CA84FFD21D4436FE005100DA /* ViewController.swift */,
+				CAE8FCC01D4C84F700DA62D3 /* SignUpViewController.swift */,
 				CABD25871D444EB8002B6385 /* MessageCell.swift */,
+				CA3D99581D4DBE8F002A8F60 /* User.swift */,
+				CAE8FCC21D4DAECA00DA62D3 /* HomeViewController.swift */,
+				CAE8FCBE1D4C832900DA62D3 /* LoginViewController.swift */,
 				CA2358031D4497A600B9C539 /* MCTextInputView */,
 				CA84FFD41D4436FE005100DA /* Main.storyboard */,
 				CA84FFD71D4436FE005100DA /* Assets.xcassets */,
@@ -265,9 +277,13 @@
 				CA84FFD31D4436FE005100DA /* ViewController.swift in Sources */,
 				CA84FFD11D4436FE005100DA /* AppDelegate.swift in Sources */,
 				CA2358081D449B2100B9C539 /* StringExtensions.swift in Sources */,
+				CAE8FCBF1D4C832900DA62D3 /* LoginViewController.swift in Sources */,
+				CAE8FCC31D4DAECA00DA62D3 /* HomeViewController.swift in Sources */,
 				CAEA2B211D448F9700751298 /* Constant.swift in Sources */,
+				CAE8FCC11D4C84F700DA62D3 /* SignUpViewController.swift in Sources */,
 				CA2358021D4495FA00B9C539 /* UIViewExtensions.swift in Sources */,
 				CAEA2B251D44949C00751298 /* MCTextInputView.swift in Sources */,
+				CA3D99591D4DBE8F002A8F60 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

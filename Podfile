@@ -7,4 +7,6 @@ target 'MessengerClone' do
 
   # Pods for MessengerClone
   pod "SwiftPhoenixClient"
+  pod 'Alamofire', '~> 3.4.1'
+  pod 'SwiftyJSON'
 end
