@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func loginButtonTapped(sender: AnyObject) {
@@ -35,10 +34,16 @@ class LoginViewController: UIViewController {
         let params = ["username" : username,
                       "password" : password]
         
-        Alamofire.request(.POST, "http://localhost:4000/api/v1/sessions", parameters: params, encoding: .JSON, headers: nil).responseData { response in
-            guard let httpResponse = response.response
-                where httpResponse.statusCode == 200
+        APIManager.POSTLoginUserWithParams(params) { (success, data) in
+            guard let data = data
+                where success
                 else { return }
+            
+            let json = JSON(data: data)
+            
+            guard let userDict = json.dictionaryObject else { return }
+
+            User.currentUser = User(dictionary: userDict)
             
             self.performSegueWithIdentifier("toHomeViewController", sender: self)
         }

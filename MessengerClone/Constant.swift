@@ -9,5 +9,5 @@
 import Foundation
 
 struct Constant {
-    static let herokuDomain = "protected-depths-43052.herokuapp.com"
+    static let HerokuDomain = "protected-depths-43052.herokuapp.com"
 }

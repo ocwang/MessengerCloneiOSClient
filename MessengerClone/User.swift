@@ -9,6 +9,9 @@
 import UIKit
 
 class User: NSObject {
+    
+    static var currentUser: User?
+    
     var username: String
     var name: String
     var userID: Int

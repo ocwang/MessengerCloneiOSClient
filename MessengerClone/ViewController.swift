@@ -11,13 +11,17 @@ import SwiftPhoenixClient
 
 class ViewController: UIViewController {
 
+    var chat: Chat!
+    
     typealias Message = Phoenix.Message
     
     // MARK: - Instance Vars
     
-    let topic = "rooms:lobby"
+    lazy var topic: String = {
+        return "rooms:\(self.chat.chatID)"
+    }()
     
-    let socket = Phoenix.Socket(domainAndPort: Constant.herokuDomain,
+    let socket = Phoenix.Socket(domainAndPort: Constant.HerokuDomain,
                                 path: "socket",
                                 transport: "websocket",
                                 prot: "https")
@@ -87,15 +91,24 @@ class ViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // TODO: disconnect from websocket
+        precondition(false)
+    }
+    
     // MARK: - Auto Layout
     
     func setupConstraints() {
         textInputView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor).active = true
         textInputView.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
         textInputViewBottomConstraint =
-            textInputView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor)
+            textInputView.topAnchor.constraintEqualToAnchor(view.topAnchor)
         textInputViewBottomConstraint!.active = true
         textInputView.heightAnchor.constraintEqualToConstant(100).active = true
+        
+        tableView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0)
     }
     
     override func updateViewConstraints() {
@@ -114,7 +127,7 @@ class ViewController: UIViewController {
             return
         }
 
-        sendMessage("ocwang", body: body)
+        sendMessage(User.currentUser!.name, body: body)
         textInputView.textField.text = ""
         textInputView.textField.resignFirstResponder()
     }
@@ -156,7 +169,7 @@ extension ViewController: UITableViewDataSource {
         
         cell.contentLabel.text = "[\(username)] \(body)"
         cell.containerView.backgroundColor =
-            String(username).containsString("ocwang") ? .greenColor() : .redColor()
+            String(username).containsString(User.currentUser!.name) ? .greenColor() : .redColor()
     }
 }
 

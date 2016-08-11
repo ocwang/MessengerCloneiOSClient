@@ -11,51 +11,54 @@ import Alamofire
 import SwiftyJSON
 
 class HomeViewController: UIViewController {
-
-    var friends = [User]()
+    
+    var chats = [Chat]()
     
     @IBOutlet weak var tableView: UITableView!
+    
     // MARK: - VC Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        Alamofire.request(.GET,
-            "http://localhost:4000/api/v1/users",
-            parameters: nil,
-            encoding: .JSON,
-            headers: nil)
-            .responseData { response in
-                guard let data = response.data
-                    else { return }
-                
-                let json = JSON(data: data)
-                
-                guard let userArray = json.arrayObject as? [NSDictionary]
-                    else { return }
-                
-                var friend: User
-                for userDict in userArray {
-                    friend = User(dictionary: userDict as! [String : AnyObject])
-                    self.friends.append(friend)
-                }
+        APIManager.GETChatsForUser(19) {
+            self.chats = $0
+            
+            dispatch_async(dispatch_get_main_queue()) {
                 self.tableView.reloadData()
+            }
         }
     }
 }
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return chats.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell")!
         
-        let friend = friends[indexPath.row]
-        cell.textLabel?.text = friend.username
+        let chat = chats[indexPath.row]
+        cell.textLabel?.text = chat.name
         
         return cell
+    }
+}
+
+// MARK: - Navigation
+
+extension HomeViewController {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guard let identifier = segue.identifier
+            where identifier == "toChat"
+            else { return }
+        
+        guard let indexPath = tableView.indexPathForSelectedRow
+            else { return }
+        
+        let vc = segue.destinationViewController as! ViewController
+        vc.chat = chats[indexPath.row]
     }
 }

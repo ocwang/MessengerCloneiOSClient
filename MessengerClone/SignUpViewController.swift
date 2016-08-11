@@ -34,22 +34,10 @@ class SignUpViewController: UIViewController {
                       "password" : password,
                       "name" : name]
         
-        Alamofire.request(.POST, "http://localhost:4000/api/v1/users", parameters: params, encoding: .JSON, headers: nil).responseData() { response in
-            guard let data = response.data
-                else { return }
-            
-            let json = JSON(data: data)
-            let responseUserID = json["id"]
-            let responseUsername = json["username"]
-            let responseName = json["name"]
-            
-            print("(\(responseUserID)) \(responseUsername) - \(responseName)")
-            
-            guard let httpResponse = response.response
-                where httpResponse.statusCode == 201
-                else { return }
-            
-            self.navigationController!.popViewControllerAnimated(true)
+        APIManager.POSTNewUserWithParams(params) { (success) in
+            if success {
+                self.navigationController!.popViewControllerAnimated(true)
+            }
         }
     }
 }
